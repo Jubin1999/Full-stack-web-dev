@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment form</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 15px 30px;
+        font-size: 17px;
+        padding: 8px;
+      }
+      .container {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+      }
+      fieldset {
+          background-color: #fff;
+          border: 1px solid #ccc;
+      }
+      .main_heading{
+          text-align: center;
+          background-color: rgb(136, 202, 30);
+      }
+      input[type="submit"]{
+          background-color: #4daea1;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          width: 100%;
+      }
+      input[type="submit"]:hover{
+          background-color: #444444;
+      }
+      textarea{
+          margin: 10px;
+      }
+    </style>
+  </head>
+  <body class="c">
+    <div class="container">
+      <form action="">
+        <h1 class="main_heading">Payment Form</h1>
+        <hr>
+        <h2>Contact Information</h2>
+        <p>
+          Name: *
+          <input type="text" name="name" placeholder="Username" required />
+        </p>
+        <fieldset>
+          <legend>Gender *</legend>
+          <p>
+            Male <input type="radio" name="gender" id="Male" required /> Female
+            <input type="radio" name="gender" id="Female" required />
+          </p>
+        </fieldset>
+        <p>
+          Address:
+          <textarea
+            name="address"
+            id="address"
+            cols="50"
+            rows="8"
+            placeholder="Enter your address"
+          ></textarea>
+        </p>
+        <p class="class1">
+          Email: *
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="panday@gmail.com"
+          />
+        </p>
+        <p class="class2">
+          Pincode: *
+          <input
+            type="number"
+            name="pincode"
+            id="pincode"
+            required
+            placeholder="123456"
+          />
+        </p>
+        <hr />
+        <h2>Payment Information</h2>
+        <p class="class">
+          Card type: *
+          <select name="card_type" id="card_type" required>
+            <option value="">--select a card type--</option>
+            <option value="visa">Visa</option>
+            <option value="Credit">Credit</option>
+            <option value="Master card">Master card</option>
+            <option value="Rupay">Rupay</option>
+          </select>
+        </p>
+        <p class="class3">
+          Card number *
+          <input
+            type="number"
+            name="card_number"
+            id="card_number"
+            required
+            placeholder="1111-2222-3333-4444"
+          />
+        </p>
+        <p class="class4">
+          Expiration Date: *
+          <input type="date" name="exp_date" id="date" required />
+        </p>
+        <p>
+          CVV *
+          <input
+            type="password"
+            name="cvv"
+            id="cvv"
+            required
+            placeholder="123456"
+          />
+        </p>
+        <input type="submit" value="Pay now" />
+      </form>
+    </div>
+  </body>
+</html>
