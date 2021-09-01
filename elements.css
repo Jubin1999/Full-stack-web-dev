@@ -1,0 +1,26 @@
+p,
+a{
+    color: rgb(255, 47, 193);
+}
+li{
+    list-style-type: square;
+}
+h1{
+    color: rgb(205, 92, 92);
+    background-color: darkturquoise;
+}
+.special{
+    color: orange;
+    font-weight: bold;
+} 
+#heading{
+    color: red;
+    background-color: black;
+}
+p#one{
+    color: red;
+    background-color: black;
+}
+li[class="special"]{
+    font-size: 200%;
+}
