@@ -1,0 +1,31 @@
+h3{
+    color: brown;
+}
+h3{
+    color: darkorange;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    float: left;
+}
+nav{
+    background-color: brown;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+h1{
+    background-color: chartreuse;
+    text-align: center;
+    padding: 50px;
+}
+nav a:hover{
+    color: black;
+}  
+  .carousel-cell {
+    width: 66%;
+    margin-right: 10px;
+    border-radius: 5px;
+  }

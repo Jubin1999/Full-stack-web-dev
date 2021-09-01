@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container {
+    padding: 5px;
+    height: 80vh;
+    width: 100%;
+    background: green;
+}
+#cont1 {
+    display: flex;
+}
+#cont2 {
+    display: flex;
+}
+#cont3 {
+    display: flex;
+}
+.box {
+    height: 100px;
+    width: 100%; 
+    background: yellow;
+    border-radius: 4px;
+    margin: 2px;
+    color: blue;
+}
+#main_box {
+    display: flex;
+    font-size: 5px;
+}
+.wrapper > div {
+    flex: 1;
+}
+.inside_boxes {
+    height: 20px;
+    width: 30px;
+    padding: 5px;
+    background: red;
+    border: 1px inset white;
+    border-radius: 5px;
+    color: black;
+}
+.J {
+    color: darkred;
+    background-color: lime;
+}
