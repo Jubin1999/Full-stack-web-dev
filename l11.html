@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+  </head>
+  <body>
+    <script>
+
+    //for loop
+    //for (let i=0;i<10;i++){
+    //    console.log("Namaste world")
+    //}
+    //while loop
+    //   let i = 10;
+    //   while(i>=0){
+    //       console.log("Namaste World")
+    //       i--
+    //   }
+
+    //do while
+    // let j = 0;
+    // do{
+    //     console.log("Namaste World")
+    //     j++
+    // }
+    // while(j<100)
+
+    //for ...In
+    let animal = {
+        name : "Zebra",
+        leg: 4
+    };
+    for(let key in animal){
+        console.log(key, animal[key]);
+    }
+    //Array
+
+    let names = ["Rahul", "Neha","Aman","Rishabh"];
+    for(let index in names){
+        console.log(index, names[index])
+    }
+
+    //for...of
+    for(let name of names){
+        console.log(name)
+    }
+    
+    </script>
+  </body>
+</html>
