@@ -1,0 +1,61 @@
+.card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(0,0,0,0.5);
+}
+.face{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.face1{
+    box-sizing: border-box;
+    padding: 20px;
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+.javascript{
+    background-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: #02b5cb;
+}
+.card:hover .face.face1{
+    height: 60px;
+}
+
+h2{
+    font-size: 2em;
+}
+
+.card:nth-child(1) .face.face2{
+    background-image: linear-gradient(
+        40deg,
+        #fffc00 0%,
+        #fc00ff 45%,
+        #00fffc 100%
+    );
+    border-radius: 15px;
+}
+.face2{
+    transition: 0.5s;
+}
+.face h2{
+    margin: 0;
+    padding: 0;
+    font-size: 10em;
+    color: #fff;
+    transition: 0.5s;
+    text-shadow: 0.2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
